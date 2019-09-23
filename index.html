@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Planners Alliance | Coming Soon</title>
+  <link href="./favicon.ico" rel="icon" type="image/png">
+</head>
+
+<body>
+<style type="text/css">
+  html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
+<script>
+  if (window.innerWidth >= 1025) {
+    // code for computer viewports
+    document.write('<script type="text/javascript" src="js/computer.js"><\/script>');
+    console.log("loaded computer svg");
+  } else if (window.innerWidth >= 480 && window.innerWidth <= 1024 ) {
+    // code for tablet viewports
+    document.write('<script type="text/javascript" src="js/tablet.js"><\/script>');
+    console.log("loaded tablet svg");
+  } else {
+    // code for mobile viewports
+    document.write('<script type="text/javascript" src="js/mobile.js"><\/script>');
+    console.log("loaded mobile svg");
+
+  }
+</script>
+</body>
+
+</html>
